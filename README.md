@@ -3,9 +3,7 @@
 This is a Django sample project, web App to find weather of a city using web scraping technique
 
 ## Requirements
-# Python
-# Django
-# IDE or VS Code
+ Python, Django, IDE or VS Code
  
 
 ## Installation
