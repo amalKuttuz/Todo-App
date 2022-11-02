@@ -1,0 +1,16 @@
+<h1>To Do List</h1>
+<p> <button type="add" href='add.html' class="btn btn-primary">ADD TASK</button>
+
+</p>
+{% for d in sq %}
+
+<p>
+    <table border='black'>
+    <tr>TASK NAME</tr> <tr>ACTIONS </tr>
+    <td>{{d.title}} </td>
+    <td><a href='update/{{d.id}}'> Update</a> 
+    <a href='delete/{{d.id}}'> Delete</a> </td>
+    </table>
+</p>
+
+{% endfor %}
