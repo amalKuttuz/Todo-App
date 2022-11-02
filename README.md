@@ -1,6 +1,6 @@
 ## Todo-App
 
-This is a Django sample project, web App to find weather of a city using web scraping technique
+This is a Django sample project, A To-Do web App to learn CRUD operations
 
 ## Requirements
  Python, Django, IDE or VS Code
