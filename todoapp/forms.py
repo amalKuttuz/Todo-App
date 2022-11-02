@@ -5,6 +5,7 @@ class TodoForm(forms.ModelForm):
     class Meta:
         model = TodoModel
         fields = '__all__'
+        
 
     # title=forms.CharField(max_length=100, required=False)
     # created=forms.DateField( required=False)

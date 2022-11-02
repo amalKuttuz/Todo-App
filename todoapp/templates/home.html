@@ -1,16 +1,40 @@
 <h1>To Do List</h1>
-<p> <button type="add" href='add.html' class="btn btn-primary">ADD TASK</button>
+<p> <a href='add' class="btn btn-primary">ADD TASK</a>
 
 </p>
+<p>
+    <table border='black' >
+        <tr>
+    <th >TASK NAME</th> <th>ACTIONS </th> <th> STATUS </th>  <th> CREATED ON </th> <th> DESCRIPTION </th> </tr>
+
 {% for d in sq %}
 
-<p>
-    <table border='black'>
-    <tr>TASK NAME</tr> <tr>ACTIONS </tr>
-    <td>{{d.title}} </td>
-    <td><a href='update/{{d.id}}'> Update</a> 
-    <a href='delete/{{d.id}}'> Delete</a> </td>
-    </table>
+{% if d.status == True %}
+
+<tr> <td> <strike> {{d.title}} <strike> </td>  
+    <td> <a href='update/{{d.id}}'> Update</a>
+    <a href='delete/{{d.id}}'> Delete</a>  </td>
+    <td>Completed</td>
+    <td>{{d.created}}</td>
+    <td>{{d.desc}}</td>
+
+</tr>
+
+{% else %}
+
+<tr> <td>{{d.title}} </td>  
+     <td> <a href='update/{{d.id}}'> Update</a> 
+    <a href='delete/{{d.id}}'> Delete</a>  </td>
+    <td>Pending  </td>
+    <td>{{d.created}}</td>
+    <td>{{d.desc}}</td>
+  
+</tr>
+
+
+
+{% endif %}
+{% endfor %}
+</table>
 </p>
 
-{% endfor %}
