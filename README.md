@@ -27,5 +27,5 @@ Then go to the browser and enter the url **http://localhost:8000/home**
 Home Page             |  Demo
 :-------------------------:|:-------------------------:
 <p align="center">
-  <img width="600" height="350" src="https://github.com/amalKuttuz/Todo-App/blob/main/Page%20not%20found%20at%20_%20-%20Google%20Chrome%2002-11-2022%2002_33_34.png"></img>
+  <img width="540" height="250" src="https://github.com/amalKuttuz/Todo-App/blob/main/Page%20not%20found%20at%20_%20-%20Google%20Chrome%2002-11-2022%2002_33_34.png"></img>
 </p>
